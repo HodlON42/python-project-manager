@@ -23,7 +23,7 @@ A command-line utility for initializing and managing Python projects.
 ## Installation
 
 ```bash
-pip install python-project-manager
+pip install hodlon-python-project-manager
 ```
 
 ## Usage

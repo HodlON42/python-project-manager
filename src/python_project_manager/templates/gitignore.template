@@ -1,0 +1,109 @@
+# Fichiers cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Artéfacts de construction et de distribution
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+
+# Fichiers de logs
+*.log
+logs/
+logging/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environnements virtuels et fichiers d'environnement
+.env
+.envrc
+.env.local
+.env.*.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pipenv
+.python-version
+
+# Fichiers des IDE et éditeurs
+.idea/
+.vscode/
+.vim/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+.*.sw[po]
+
+# Fichiers de test et de couverture
+.tox/
+.nox/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+nosetests.xml
+cover/
+
+# Fichiers de documentation générés
+docs/_build/
+doc/_build/
+
+# Fichiers générés par Jupyter Notebook
+.ipynb_checkpoints/
+
+# Fichiers de profilage et d'analyse statique
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.cache/
+profiling/
+*.prof
+*.pstats
+
+# Fichiers Docker
+.dockerignore
+docker-compose.override.yml
+
+# Fichiers sensibles ou temporaires
+.DS_Store
+*.bak
+*.tmp
+*~
+.*.swp
+.*.swo
+secrets.env
+
+# Fichiers spécifiques au projet
+output_part_*.txt
+collect_files.sh
+reconstruct_files.sh
+clean.sh
+config_local.py

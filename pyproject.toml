@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-project-manager"
+version = "1.0.0"
+description = "A utility tool for Python project initialization and management"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "HodlON Sàrl"}
+]
+dependencies = []
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Repository = "https://github.com/HodlON42/python-project-manager"
+Documentation = "https://github.com/HodlON42/python-project-manager#readme"
+"Bug Tracker" = "https://github.com/HodlON42/python-project-manager/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0"
+]
+
+[project.scripts]
+pysetup = "python_project_manager.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+package-data = {"python_project_manager" = ["templates/*"]}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["python_project_manager"]
+
+[tool.coverage.report]
+show_missing = true
